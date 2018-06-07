@@ -40,7 +40,7 @@ public class InlineParkingALot
 	{
 		List<ParkingTime> allParkingInfoAvailable = gatherAlreadyParkedInfoWith(newParkingTimeOfVehicle);
 		
-		var validator = InlineParkingALotValidator.validateIfAllInfoFitsIn(allParkingInfoAvailable, maxNumberOfCars);
+		InlineParkingALotValidator validator = InlineParkingALotValidator.validateIfAllInfoFitsIn(allParkingInfoAvailable, maxNumberOfCars);
 		validator.validateIfCanPark();
 	}
 		

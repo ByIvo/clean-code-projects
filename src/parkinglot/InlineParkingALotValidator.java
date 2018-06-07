@@ -26,7 +26,7 @@ class InlineParkingALotValidator
 		
 		int maxParkedMomentum = getMaxMomentumOfParkingInfo();
 
-		for(var momentum=1; momentum<= maxParkedMomentum; momentum++) {
+		for(int momentum=1; momentum<= maxParkedMomentum; momentum++) {
 			validateVacanciesStateInMomemtum(momentum);
 		}
 	}
